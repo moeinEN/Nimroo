@@ -173,6 +173,19 @@ PyInstaller is not a cross-compiler:
 
 The included GitHub Actions workflow can build releases for all three platforms.
 
+## Current replay support
+
+Nimroo currently exports original recorded audio and timed whiteboard content, including drawings and page changes.
+
+Webcam video, screen sharing, shared videos, and other presenter content are not yet supported in the final MP4 output. These streams may be downloaded when present, but are not currently rendered into the exported video.
+
+
+
+## Contributions Welcome
+
+If you have access to Nima replay recordings that include screen sharing, webcam video, shared media, or other unsupported content types, contributions are very welcome. Test samples, event metadata, bug reports, and pull requests can all help Nimroo support more replay formats. <3
+
+
 ## Authorization
 
 Nimroo is intended only for exporting recordings that you are authorized to access.
