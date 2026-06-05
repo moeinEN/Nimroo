@@ -1,0 +1,5 @@
+browser-cookie3>=0.20.1
+websocket-client>=1.8.0
+requests>=2.31.0
+Pillow>=10.0.0
+imageio-ffmpeg>=0.5.1

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nima-replay-exporter"
+version = "2.1.0"
+description = "Export Nima online-class replays directly from a room URL to MP4"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "browser-cookie3>=0.20.1",
+  "websocket-client>=1.8.0",
+  "requests>=2.31.0",
+  "Pillow>=10.0.0",
+  "imageio-ffmpeg>=0.5.1",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Operating System :: MacOS",
+]
+
+[project.scripts]
+nima-export = "nima_exporter:main"
+
+[tool.setuptools]
+py-modules = ["nima_exporter"]
